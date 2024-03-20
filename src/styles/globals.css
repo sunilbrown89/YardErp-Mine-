@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+html,
+body {
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth !important;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #e33324 transparent;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0.25em;
+  height: 0.25em;
+}
+::-webkit-scrollbar-thumb {
+  background: #5b50a1;
+  border-radius: 10em;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+*:disabled {
+  cursor: not-allowed;
+}
+
+@layer components {
+  .custom-container {
+    @apply container mx-auto px-4;
+  }
+  .common-transition {
+    @apply !transition-all !ease-in-out !duration-300;
+  }
+  .delay-animation {
+    @apply !transition-all !ease-in-out !duration-500;
+  }
+  .title-styling {
+    @apply font-semibold text-xl leading-6 md:text-[40px] md:leading-[50px];
+  }
+}
+.dark-bg {
+  background: linear-gradient(180deg, #5b50a1 0%, #907eff 100%);
+}
+
+.btn-one {
+  background: linear-gradient(180deg, #5b50a1 0%, #907eff 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  background-size: 200% auto;
+  color: white;
+  border: 1px solid #907eff;
+}
+
+.btn-one_hover_none {
+  background: linear-gradient(180deg, #5b50a1 0%, #907eff 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  background-size: 200% auto;
+  color: white;
+  border: 1px solid #907eff;
+}
+
+.btn-one:hover {
+  color: #5b50a1;
+  background: white;
+  border: 1px solid #5b50a1;
+  transition: all 300ms ease-in-out;
+}
+
+.main-bg {
+  background: linear-gradient(180deg, #ffffff 0%, #e0f3ff 100%);
+}
+
+/* ....................react slick style........................ */
+.our-store-dots .slick-dots {
+  bottom: 0px;
+  display: none !important;
+}
+.company-slick-slider .slick-track {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+/* ....................react slick style........................ */

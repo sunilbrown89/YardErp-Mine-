@@ -1,0 +1,9 @@
+export { default as Hero } from "./Hero";
+export { default as BuilMarket } from "./BuildMarket";
+export { default as Features } from "./Features";
+export { default as Provide } from "./Provide";
+export { default as Faq } from "./Faq";
+export { default as Slider } from "./Slider";
+export { default as WhyChoose } from "./WhyChoose";
+export { default as Testimonial } from "./Testimonial";
+export { default as Banner } from "./Banner";
